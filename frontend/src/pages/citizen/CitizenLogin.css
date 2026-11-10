@@ -1,0 +1,244 @@
+
+.citizen-login-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  background: #f5f7fb;
+  color: #172033;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.citizen-login-brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 45px 9%;
+  color: white;
+  background: linear-gradient(145deg, #102744, #174b78);
+}
+
+.citizen-login-logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: white;
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.citizen-login-hero {
+  max-width: 470px;
+  margin: 55px auto;
+}
+
+.login-eyebrow {
+  color: #3479df;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.citizen-login-brand .login-eyebrow {
+  color: #a8d1ff;
+}
+
+.citizen-login-hero h1 {
+  margin: 20px 0;
+  font-size: clamp(36px, 4vw, 54px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+}
+
+.citizen-login-hero p {
+  color: #d0deed;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.citizen-login-footer {
+  color: #b8cce0;
+  font-size: 12px;
+}
+
+.citizen-login-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 22px;
+}
+
+.citizen-login-card {
+  width: 100%;
+  max-width: 440px;
+}
+
+.citizen-login-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: #e5efff;
+  color: #2465ca;
+  margin-bottom: 25px;
+}
+
+.citizen-login-card h2 {
+  margin: 12px 0 8px;
+  font-size: 30px;
+  letter-spacing: -0.7px;
+}
+
+.citizen-login-subtitle {
+  margin: 0 0 25px;
+  color: #738096;
+  font-size: 14px;
+}
+
+.citizen-login-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.citizen-login-card label {
+  margin: 15px 0 8px;
+  font-size: 13px;
+  font-weight: 650;
+  color: #344256;
+}
+
+.citizen-login-card input {
+  width: 100%;
+  min-height: 47px;
+  padding: 12px 14px;
+  border: 1px solid #dce3ed;
+  border-radius: 8px;
+  background: white;
+  outline: none;
+  font-size: 14px;
+}
+
+.citizen-login-card input:focus {
+  border-color: #3479df;
+  box-shadow: 0 0 0 3px rgba(52, 121, 223, 0.12);
+}
+
+.citizen-login-password {
+  position: relative;
+}
+
+.citizen-login-password input {
+  padding-right: 48px;
+}
+
+.login-password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  color: #75839a;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.citizen-login-submit {
+  min-height: 49px;
+  margin-top: 27px;
+  border: 0;
+  border-radius: 8px;
+  background: #2465ca;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.citizen-login-submit:hover:not(:disabled) {
+  background: #174fa8;
+}
+
+.citizen-login-submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.login-message {
+  margin: 15px 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.login-message.error {
+  background: #fff0f0;
+  color: #b42318;
+}
+
+.login-message.success {
+  background: #e9f8ef;
+  color: #167442;
+}
+
+.citizen-login-register {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 13px;
+  color: #718096;
+}
+
+.citizen-login-register a {
+  color: #2465ca;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.citizen-login-back {
+  display: block;
+  margin-top: 22px;
+  text-align: center;
+  color: #64748b;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+@media (max-width: 850px) {
+  .citizen-login-page {
+    grid-template-columns: 1fr;
+  }
+
+  .citizen-login-brand {
+    min-height: 260px;
+    padding: 25px;
+  }
+
+  .citizen-login-hero {
+    margin: 35px 0 15px;
+  }
+
+  .citizen-login-hero h1 {
+    font-size: 36px;
+  }
+
+  .citizen-login-footer {
+    display: none;
+  }
+
+  .citizen-login-content {
+    padding: 40px 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .citizen-login-card h2 {
+    font-size: 26px;
+  }
+
+  .citizen-login-content {
+    padding: 30px 18px;
+  }
+}

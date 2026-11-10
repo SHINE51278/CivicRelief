@@ -1,0 +1,204 @@
+
+.submit-report-page {
+  min-height: 100vh;
+  background: #f0f6fc;
+  padding: 30px 20px 60px;
+  color: #173253;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.submit-report-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.submit-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #087cbd;
+  font-size: 26px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.submit-report-container {
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
+}
+
+.submit-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #087cbd;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 18px;
+}
+
+.submit-report-card {
+  background: white;
+  padding: 38px;
+  border: 1px solid #dce7f1;
+  border-radius: 17px;
+  box-shadow: 0 15px 45px rgba(24, 55, 90, 0.07);
+}
+
+.submit-icon {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  background: #e7f3fd;
+  color: #087cbd;
+  border-radius: 13px;
+  margin-bottom: 23px;
+}
+
+.submit-eyebrow {
+  color: #087cbd;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.7px;
+}
+
+.submit-report-card h1 {
+  font-size: 29px;
+  color: #142e50;
+  margin: 10px 0;
+}
+
+.submit-description {
+  color: #6b7f98;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.submit-report-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.submit-report-card label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #344b68;
+  margin-top: 8px;
+}
+
+.submit-report-card input,
+.submit-report-card select,
+.submit-report-card textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d8e2ed;
+  border-radius: 8px;
+  background: white;
+  color: #253d5b;
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+}
+
+.submit-report-card input:focus,
+.submit-report-card select:focus,
+.submit-report-card textarea:focus {
+  border-color: #1687ca;
+  box-shadow: 0 0 0 3px rgba(22, 135, 202, 0.1);
+}
+
+.submit-report-card textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.submit-input-icon {
+  position: relative;
+}
+
+.submit-input-icon svg {
+  position: absolute;
+  left: 13px;
+  top: 14px;
+  color: #8497ad;
+}
+
+.submit-input-icon input {
+  padding-left: 40px;
+}
+
+.submit-report-button {
+  margin-top: 15px;
+  padding: 14px;
+  border: none;
+  border-radius: 9px;
+  background: #087cbd;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+
+.submit-report-button:hover {
+  background: #086ba4;
+}
+
+.submit-report-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.submit-message {
+  padding: 13px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.submit-message.error {
+  background: #fff0ef;
+  border: 1px solid #f4c6c2;
+  color: #a23e36;
+}
+
+.submit-message.success {
+  background: #eaf8ef;
+  border: 1px solid #bce4ca;
+  color: #237744;
+}
+
+.submit-message a {
+  color: inherit;
+  font-weight: 700;
+  margin-left: auto;
+}
+
+.submit-note {
+  text-align: center;
+  color: #8292a6;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+@media (max-width: 550px) {
+  .submit-report-card {
+    padding: 25px 19px;
+  }
+
+  .submit-report-card h1 {
+    font-size: 25px;
+  }
+}

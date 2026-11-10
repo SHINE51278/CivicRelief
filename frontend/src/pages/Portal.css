@@ -1,0 +1,51 @@
+/* CivicRelief public and access pages */
+.home-page { min-height: 100vh; background: #f8fafc; color: #172b4d; }
+.home-navbar { height: 76px; padding: 0 8%; display:flex; justify-content:space-between; align-items:center; background:#fff; border-bottom:1px solid #e8edf3; }
+.home-brand,.access-brand { display:flex; align-items:center; gap:10px; color:#137bb4; text-decoration:none; font-size:23px; font-weight:800; }
+.home-nav-links { display:flex; gap:30px; }
+.home-nav-links a { text-decoration:none; color:#475569; font-weight:600; }
+.home-hero { padding:85px 10%; min-height:390px; display:flex; align-items:center; justify-content:space-between; gap:45px; background:linear-gradient(120deg,#eaf5fc,#f7faff); }
+.hero-content { max-width:610px; }
+.hero-label,.section-heading span { color:#1685c5; font-size:12px; font-weight:800; letter-spacing:2px; }
+.hero-content h1 { font-size:clamp(34px,5vw,55px); line-height:1.17; margin:22px 0; color:#142d4e; }
+.hero-content h1 span { color:#1685c5; }
+.hero-content p { color:#64748b; font-size:16px; line-height:1.8; max-width:530px; }
+.hero-button { display:inline-flex; align-items:center; gap:10px; margin-top:22px; padding:14px 22px; border-radius:8px; background:#1685c5; color:white; text-decoration:none; font-weight:700; }
+.hero-visual { position:relative; display:flex; justify-content:center; align-items:center; min-width:270px; }
+.hero-icon-card { padding:42px; border-radius:24px; background:white; box-shadow:0 15px 45px rgba(27,65,100,.12); text-align:center; color:#1685c5; }
+.hero-icon-card h2 { color:#172b4d; }
+.hero-icon-card p { color:#64748b; }
+.floating-icon { position:absolute; padding:14px; border-radius:13px; background:white; color:#1685c5; box-shadow:0 8px 25px rgba(27,65,100,.12); }
+.location-icon { top:-20px; right:-15px; }
+.activity-icon { bottom:-15px; left:-15px; }
+.portal-section { padding:75px 8%; }
+.section-heading { text-align:center; margin-bottom:40px; }
+.section-heading h2 { font-size:34px; margin:12px 0; }
+.section-heading p { color:#64748b; }
+.portal-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+.portal-card { padding:30px; background:white; border:1px solid #e2e8f0; border-radius:14px; transition:transform .2s,box-shadow .2s; }
+.portal-card:hover { transform:translateY(-5px); box-shadow:0 14px 35px rgba(27,65,100,.1); }
+.portal-icon { width:58px; height:58px; display:grid; place-items:center; border-radius:13px; }
+.citizen-color { color:#1685c5; background:#e8f4fc; }
+.admin-color { color:#7652bd; background:#f0ebfa; }
+.volunteer-color { color:#16834d; background:#e7f7ee; }
+.portal-card h3 { margin-top:22px; font-size:21px; }
+.portal-card p { min-height:70px; color:#64748b; line-height:1.7; font-size:14px; }
+.portal-card a { display:flex; align-items:center; gap:8px; margin-top:20px; color:#1685c5; text-decoration:none; font-weight:700; }
+.portal-card .secondary-link { margin-top:13px; color:#64748b; font-size:13px; }
+.home-about { padding:55px 12%; text-align:center; background:#edf5fb; }
+.home-about p { max-width:700px; margin:15px auto 0; line-height:1.8; color:#64748b; }
+.home-footer { display:flex; justify-content:center; align-items:center; gap:9px; padding:25px; background:white; color:#64748b; font-size:13px; }
+.access-page { min-height:100vh; padding:35px 7%; background:linear-gradient(135deg,#edf6fc,#f8fafc); }
+.access-brand { width:max-content; margin:0 auto 35px; }
+.access-card { width:min(100%,480px); margin:0 auto; padding:36px; background:#fff; border:1px solid #e2e8f0; border-radius:16px; box-shadow:0 18px 50px rgba(27,65,100,.09); }
+.access-icon { width:56px; height:56px; display:grid; place-items:center; border-radius:14px; color:#1685c5; background:#e8f4fc; }
+.access-eyebrow { margin-top:22px; color:#1685c5; font-size:11px; font-weight:800; letter-spacing:1.8px; }
+.access-card h1 { margin:8px 0; color:#172b4d; font-size:28px; }
+.access-description { color:#64748b; line-height:1.7; }
+.implementation-notice { margin:22px 0; padding:14px; border:1px solid #f0d9a8; border-radius:9px; background:#fff8e8; color:#79551a; font-size:13px; line-height:1.65; }
+.access-switch { color:#64748b; font-size:14px; }
+.access-switch a { color:#1685c5; font-weight:700; }
+.back-link { display:inline-flex; align-items:center; gap:8px; margin-top:22px; color:#1685c5; text-decoration:none; font-weight:700; }
+@media(max-width:850px) { .home-hero { flex-direction:column; text-align:center; } .portal-grid { grid-template-columns:1fr; } .hero-visual { margin:30px 0; } }
+@media(max-width:500px) { .home-navbar { padding:0 5%; } .home-nav-links { gap:12px; } .home-hero { padding:55px 6%; } .portal-section { padding:55px 6%; } .access-card { padding:25px; } }

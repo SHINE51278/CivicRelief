@@ -1,0 +1,294 @@
+
+/* =========================================
+   CIVICRELIEF - CITIZEN REGISTRATION
+========================================= */
+
+.register-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  background: #f5f7fb;
+  color: #172033;
+  font-family: Inter, Arial, sans-serif;
+}
+
+/* LEFT BRANDING PANEL */
+
+.register-brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 45px 9%;
+  color: #ffffff;
+  background: linear-gradient(145deg, #102744, #174b78);
+}
+
+.register-logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.register-hero {
+  max-width: 470px;
+  margin: 55px auto;
+}
+
+.register-eyebrow {
+  color: #3479df;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.register-brand .register-eyebrow {
+  color: #a8d1ff;
+}
+
+.register-hero h1 {
+  margin: 20px 0;
+  font-size: clamp(36px, 4vw, 54px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+}
+
+.register-hero p {
+  color: #d0deed;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.register-brand-footer {
+  color: #b8cce0;
+  font-size: 12px;
+}
+
+/* RIGHT REGISTRATION SECTION */
+
+.register-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 22px;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 440px;
+}
+
+.register-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: #e5efff;
+  color: #2465ca;
+  margin-bottom: 25px;
+}
+
+.register-card h2 {
+  margin: 12px 0 8px;
+  color: #172033;
+  font-size: 30px;
+  letter-spacing: -0.7px;
+}
+
+.register-subtitle {
+  margin: 0 0 25px;
+  color: #738096;
+  font-size: 14px;
+}
+
+/* FORM */
+
+.register-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-card label {
+  margin: 15px 0 8px;
+  color: #344256;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.register-card input {
+  width: 100%;
+  min-height: 47px;
+  padding: 12px 14px;
+  border: 1px solid #dce3ed;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #172033;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.register-card input::placeholder {
+  color: #a1aaba;
+}
+
+.register-card input:focus {
+  border-color: #3479df;
+  box-shadow: 0 0 0 3px rgba(52, 121, 223, 0.12);
+}
+
+/* PASSWORD VISIBILITY */
+
+.register-password {
+  position: relative;
+}
+
+.register-password input {
+  padding-right: 48px;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: #75839a;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.password-toggle:hover {
+  color: #2465ca;
+}
+
+/* SUBMIT BUTTON */
+
+.register-submit {
+  min-height: 49px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #2465ca, #174fa8);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.register-submit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgba(36, 101, 202, 0.22);
+}
+
+.register-submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* SUCCESS AND ERROR MESSAGES */
+
+.register-message {
+  margin: 15px 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.register-message.error {
+  background: #fff0f0;
+  color: #b42318;
+  border: 1px solid #ffd6d6;
+}
+
+.register-message.success {
+  background: #e9f8ef;
+  color: #167442;
+  border: 1px solid #c5efd5;
+}
+
+/* LOGIN AND FOOTER LINKS */
+
+.register-login {
+  margin-top: 23px;
+  text-align: center;
+  font-size: 13px;
+  color: #718096;
+}
+
+.register-login a {
+  color: #2465ca;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.register-login a:hover {
+  text-decoration: underline;
+}
+
+.register-security {
+  margin-top: 22px;
+  text-align: center;
+  color: #8290a4;
+  font-size: 11px;
+}
+
+.register-back {
+  display: block;
+  margin-top: 22px;
+  text-align: center;
+  color: #64748b;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.register-back:hover {
+  color: #2465ca;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 850px) {
+  .register-page {
+    grid-template-columns: 1fr;
+  }
+
+  .register-brand {
+    min-height: 260px;
+    padding: 25px;
+  }
+
+  .register-hero {
+    margin: 35px 0 15px;
+  }
+
+  .register-hero h1 {
+    font-size: 36px;
+  }
+
+  .register-brand-footer {
+    display: none;
+  }
+
+  .register-content {
+    padding: 40px 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-card h2 {
+    font-size: 26px;
+  }
+
+  .register-content {
+    padding: 30px 18px;
+  }
+}
